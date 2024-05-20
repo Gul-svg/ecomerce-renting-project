@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
-import "./globals.css";
-import { normalize } from "path";
+import "../globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/ui/shared/Navbar";
 
@@ -19,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="box-border m-0 p-0 ">
+    <html lang="en" className="m-0 box-border p-0 ">
       <body
         className={cn(
           `${spaceGrotesk.className} font-sans antialiased min-h-screen`
