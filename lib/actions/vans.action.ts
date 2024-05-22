@@ -11,7 +11,7 @@ export async function getAllVans() {
     return allVans;
   } catch (error) {
     console.log(error);
-    throw new Error();
+    throw new Error("fetching all vans faild");
   }
 }
 
@@ -23,6 +23,6 @@ export async function findVan(id: string) {
     return van;
   } catch (error) {
     console.log(error);
-    throw new Error();
+    throw new Error(`fetch van faild`);
   }
 }
